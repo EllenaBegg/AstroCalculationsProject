@@ -1,0 +1,10 @@
+D:\Visual Studio Projects\AstroServer\AstroServer\bin\Release\AstroServer.exe.config
+D:\Visual Studio Projects\AstroServer\AstroServer\bin\Release\AstroServer.exe
+D:\Visual Studio Projects\AstroServer\AstroServer\bin\Release\AstroServer.pdb
+D:\Visual Studio Projects\AstroServer\AstroServer\bin\Release\AstroCalculations.dll
+D:\Visual Studio Projects\AstroServer\AstroServer\obj\Release\AstroServer.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\AstroServer\AstroServer\obj\Release\AstroServer.csproj.SuggestedBindingRedirects.cache
+D:\Visual Studio Projects\AstroServer\AstroServer\obj\Release\AstroServer.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\AstroServer\AstroServer\obj\Release\AstroServer.csproj.CopyComplete
+D:\Visual Studio Projects\AstroServer\AstroServer\obj\Release\AstroServer.exe
+D:\Visual Studio Projects\AstroServer\AstroServer\obj\Release\AstroServer.pdb

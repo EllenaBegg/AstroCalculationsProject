@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\AstroCalculations\AstroCalculations\bin\Release\AstroCalculations.dll
+D:\Visual Studio Projects\AstroCalculations\AstroCalculations\bin\Release\AstroCalculations.pdb
+D:\Visual Studio Projects\AstroCalculations\AstroCalculations\obj\Release\AstroCalculations.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\AstroCalculations\AstroCalculations\obj\Release\AstroCalculations.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\AstroCalculations\AstroCalculations\obj\Release\AstroCalculations.dll
+D:\Visual Studio Projects\AstroCalculations\AstroCalculations\obj\Release\AstroCalculations.pdb
