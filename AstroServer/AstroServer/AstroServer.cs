@@ -3,8 +3,8 @@ using AstroCalculations;
 
 /*
  * Student:     Ellena Begg, 30040389
- * Date:        September 2022
- * Version:     1.1 Test Version
+ * Date:        6 October 2022
+ * Version:     1.2 Final Version
  * Description: Class to implement the IAstroCalculations interface. This calls the Custom Library "AstroCalculations".
  */
 

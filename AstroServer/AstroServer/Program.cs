@@ -3,8 +3,8 @@ using System.ServiceModel;
 
 /*
  * Student:     Ellena Begg, 30040389
- * Date:        September 2022
- * Version:     1.1 Test Version
+ * Date:        6 October 2022
+ * Version:     1.2 Final Version
  * Description: Console Server that calls my Custom Library "AstroCalculations".
  *              Clients make calls to this server to do astronomical calculations.
  */
