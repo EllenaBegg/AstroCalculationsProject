@@ -1,0 +1,11 @@
+D:\Visual Studio Projects\AstroClient\AstroClient\bin\Release\AstroClient.exe.config
+D:\Visual Studio Projects\AstroClient\AstroClient\bin\Release\AstroClient.exe
+D:\Visual Studio Projects\AstroClient\AstroClient\bin\Release\AstroClient.pdb
+D:\Visual Studio Projects\AstroClient\AstroClient\obj\Release\AstroClient.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\AstroClient\AstroClient\obj\Release\AstroClient.csproj.SuggestedBindingRedirects.cache
+D:\Visual Studio Projects\AstroClient\AstroClient\obj\Release\AstroClient.Form1.resources
+D:\Visual Studio Projects\AstroClient\AstroClient\obj\Release\AstroClient.Properties.Resources.resources
+D:\Visual Studio Projects\AstroClient\AstroClient\obj\Release\AstroClient.csproj.GenerateResource.cache
+D:\Visual Studio Projects\AstroClient\AstroClient\obj\Release\AstroClient.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\AstroClient\AstroClient\obj\Release\AstroClient.exe
+D:\Visual Studio Projects\AstroClient\AstroClient\obj\Release\AstroClient.pdb
