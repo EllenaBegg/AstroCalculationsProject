@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.ServiceModel;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
  * Student:     Ellena Begg, 30040389
- * Date:        September 2022
- * Version:     1.1 Testing Version
+ * Date:        6 October 2022
+ * Version:     1.2 Final Version
  * Description: Client Form to connect to the AstroServer to do Astronomical calculations.
  *              UI must be customisable: change language, change colour
  */
@@ -25,32 +20,6 @@ namespace AstroClient
         public AstroClientForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //try
-            //{
-            //    ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
-            //        new NetNamedPipeBinding(),
-            //        new EndpointAddress("net.pipe://localhost/AstroCalculations"));
-
-            //    IAstroContract pipeProxy = pipeFactory.CreateChannel();
-
-            //    double owl = Double.Parse(textBox1.Text);
-            //    double rwl = Double.Parse(textBox2.Text);
-
-            //    double answer = pipeProxy.StarVelocity(owl, rwl);
-
-            //    textBox3.Text = answer.ToString();
-            //}
-            //catch (Exception exc)
-            //{
-            //    MessageBox.Show("Error in connecting to server" + exc.Message);
-            //}
-
-
-
         }
 
         #region Event Handlers
@@ -249,6 +218,7 @@ namespace AstroClient
             }
             else
             {
+                // otherwise display in meters per second
                 answer = String.Format("{0:#,#.##}", result) + " m/s";
             }
 
@@ -269,11 +239,11 @@ namespace AstroClient
 
             double result = pipeProxy.StarDistance(arcs);
 
-            string answer = String.Format("{0:#,#.##}", result);
-            string display = answer + " parsecs";
+            string answer = String.Format("{0:#,#.##}", result) + " parsecs";
+            
             // display result in ListView
             string[] row = {
-                        "", display, "", ""
+                        "", answer, "", ""
                     };
             listViewResults.Items.Add(new ListViewItem(row));
         }
@@ -288,11 +258,11 @@ namespace AstroClient
 
             double result = pipeProxy.TemperatureInKelvin(celsius);
 
-            string answer = String.Format("{0:#,#.##}", result);
-            string display = answer + " Kelvin";
+            string answer = String.Format("{0:#,#.##}", result) + " Kelvin";
+            
             // display result in ListView
             string[] row = {
-                        "", "", display, ""
+                        "", "", answer, ""
                     };
             listViewResults.Items.Add(new ListViewItem(row));
         }
@@ -309,16 +279,20 @@ namespace AstroClient
 
             double result = pipeProxy.EventHorizon(mass);
 
-            string answer = String.Format("{0:#.##E+0}", result);
-            //MessageBox.Show(answer + " m"); //in meters
+            string answer = "";
 
-            //string answerSFkm = String.Format("{0:#.##E+0}", result / 1000);
-            //MessageBox.Show(answerSFkm + " km"); //in kilometers
+            if (result > 1000)
+            {
+                answer = String.Format("{0:#.##E+0}", result) + " m"; // display in exponential format if more than 1000
+            }
+            else
+            {
+                answer = String.Format("{0:#.##}", result) + " m"; // otherwise just display the result without exponential formatting
+            }
 
-            string display = answer + " m";
             // display result in ListView
             string[] row = {
-                        "", "", "", display
+                        "", "", "", answer
                     };
             listViewResults.Items.Add(new ListViewItem(row));
         }
